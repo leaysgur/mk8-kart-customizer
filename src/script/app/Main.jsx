@@ -1,19 +1,22 @@
 require([
     'react', 'react-router',
     'app/Routes',
+    'app/data/DriverData', 'app/model/DriverModel'
 ], (
     React,
     Router,
-    AppRoutes
+    AppRoutes,
+    DriverData,
+    DriverModel
 ) => {
 
     class Main {
         constructor() {
-            // データ取ってきたり？
+            DriverModel.init(DriverData);
         }
 
         start() {
-            Router.run(AppRoutes, function (Handler, state) {
+            Router.run(AppRoutes, (Handler, state) => {
                 let params = state.params;
                 React.render(
                     <Handler params={params} />,
