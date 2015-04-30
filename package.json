@@ -1,0 +1,30 @@
+{
+  "name": "mk8-kart-customizer",
+  "version": "1.0.0",
+  "description": "Mario kart eighhhhhhhhhhhhhhhht!",
+  "devDependencies": {
+    "amd-optimize": "^0.4.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-bower": "^0.0.10",
+    "gulp-changed": "^1.2.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-uglify": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leader22/mk8-kart-customizer.git"
+  },
+  "author": "leader22",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leader22/mk8-kart-customizer/issues"
+  },
+  "homepage": "https://github.com/leader22/mk8-kart-customizer"
+}
