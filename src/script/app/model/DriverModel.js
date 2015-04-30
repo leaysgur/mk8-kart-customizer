@@ -1,5 +1,5 @@
 define([
-    'app/model/BaseModel'
+    'common/model/BaseModel'
 ], (
     BaseModel
 ) => {
