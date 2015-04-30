@@ -7,19 +7,18 @@ define([
 
     let { Link } = Router;
 
-    let Top = React.createClass({
+    const CustomLayout = React.createClass({
         render() {
             return (
                 <div>
-                    <h1>トップページ</h1>
+                    <h1>ドライバー選択</h1>
+                    {this.props.params.id}
                     <hr />
-                    なんやかんや
-                    <hr />
-                    <Link to="input">Input</Link>へ
+                    <Link to="/">トップへ</Link>
                 </div>
             );
         }
     });
 
-    return Top;
+    return CustomLayout;
 });

@@ -13,9 +13,10 @@ require([
         }
 
         start() {
-            Router.run(AppRoutes, function (Handler) {
+            Router.run(AppRoutes, function (Handler, state) {
+                let params = state.params;
                 React.render(
-                    <Handler />,
+                    <Handler params={params} />,
                     document.body
                 );
             });
