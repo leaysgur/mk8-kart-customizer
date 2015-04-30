@@ -1,8 +1,10 @@
 define([
     'react', 'react-router',
+    'app/model/DriverModel'
 ], (
     React,
-    Router
+    Router,
+    DriverModel
 ) => {
 
     let { Link } = Router;
@@ -13,7 +15,14 @@ define([
                 <div>
                     <h1>ドライバー選択</h1>
 
-                    <Link to="/custom/110001">まりお</Link>
+                    <ul>
+                        {DriverModel.selectAll().map((driver) => {return (
+                        <li key={driver.id}>
+                            <Link to={"/custom/"+ driver.id}>{driver.name}</Link>
+                        </li>
+                        );})}
+                    </ul>
+
                     <hr />
                     <Link to="/">トップへ</Link>
                 </div>
