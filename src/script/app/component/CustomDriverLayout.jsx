@@ -12,7 +12,8 @@ define([
             return (
                 <div>
                     <h1>ドライバー選択</h1>
-                    {this.props.params.id}
+
+                    <Link to="/custom/110001">まりお</Link>
                     <hr />
                     <Link to="/">トップへ</Link>
                 </div>
