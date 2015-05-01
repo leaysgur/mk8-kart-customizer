@@ -7,11 +7,11 @@ define([
 
     let { Link } = Router;
 
-    const ResultLayout = React.createClass({
+    const CustomControllerView = React.createClass({
         render() {
             return (
                 <div>
-                    <h1>カスタマイズ結果</h1>
+                    <h1>カートパーツ選択</h1>
                     {this.props.params.id}
                     <hr />
                     <Link to="/">トップへ</Link>
@@ -20,5 +20,5 @@ define([
         }
     });
 
-    return ResultLayout;
+    return CustomControllerView;
 });

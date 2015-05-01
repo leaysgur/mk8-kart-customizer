@@ -1,39 +1,39 @@
 define([
     'react', 'react-router',
-    'common/component/AppLayout', 'common/component/ErrorLayout',
-    'app/component/TopLayout', 'app/component/AboutLayout',
-    'app/component/CustomDriverLayout', 'app/component/CustomKartLayout',
-    'app/component/ResultLayout'
+    'common/component/AppControllerView', 'common/component/ErrorControllerView',
+    'app/component/TopControllerView', 'app/component/AboutControllerView',
+    'app/component/CustomDriverControllerView', 'app/component/CustomKartControllerView',
+    'app/component/ResultControllerView'
 ], (
     React,
     Router,
-    AppLayout,
-    ErrorLayout,
-    TopLayout,
-    AboutLayout,
-    CustomDriverLayout,
-    CustomKartLayout,
-    ResultLayout
+    AppControllerView,
+    ErrorControllerView,
+    TopControllerView,
+    AboutControllerView,
+    CustomDriverControllerView,
+    CustomKartControllerView,
+    ResultControllerView
 ) => {
 
     let { Route, DefaultRoute, NotFoundRoute } = Router;
 
     const Routes = (
-        <Route path="/" handler={AppLayout}>
-            <DefaultRoute handler={TopLayout} />
+        <Route path="/" handler={AppControllerView}>
+            <DefaultRoute handler={TopControllerView} />
 
-            <Route name="about"  handler={AboutLayout} />
+            <Route name="about"  handler={AboutControllerView} />
 
             <Route name="custom">
-                <DefaultRoute handler={CustomDriverLayout} />
-                <Route path=":id" handler={CustomKartLayout} />
+                <DefaultRoute handler={CustomDriverControllerView} />
+                <Route path=":id" handler={CustomKartControllerView} />
             </Route>
 
-            <Route name="result" handler={ResultLayout}>
+            <Route name="result" handler={ResultControllerView}>
                 <Route path=":id" />
             </Route>
 
-            <NotFoundRoute handler={ErrorLayout} />
+            <NotFoundRoute handler={ErrorControllerView} />
         </Route>
     );
 

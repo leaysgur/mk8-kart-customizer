@@ -7,7 +7,7 @@ define([
 
     let { Link } = Router;
 
-    const TopLayout = React.createClass({
+    const TopControllerView = React.createClass({
         render() {
             return (
                 <div>
@@ -20,5 +20,5 @@ define([
         }
     });
 
-    return TopLayout;
+    return TopControllerView;
 });

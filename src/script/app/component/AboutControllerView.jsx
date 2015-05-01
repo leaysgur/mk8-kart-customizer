@@ -7,7 +7,7 @@ define([
 
     let { Link } = Router;
 
-    const AboutLayout = React.createClass({
+    const AboutControllerView = React.createClass({
         render() {
             return (
                 <div>
@@ -19,5 +19,5 @@ define([
         }
     });
 
-    return AboutLayout;
+    return AboutControllerView;
 });

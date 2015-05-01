@@ -5,20 +5,18 @@ define([
     Router
 ) => {
 
-    let { RouteHandler, Link } = Router;
+    let { Link } = Router;
 
-    const AppLayout = React.createClass({
+    const ErrorControllerView = React.createClass({
         render() {
             return (
                 <div>
-                    <div>ローダーとか</div>
+                    <div>エラー！</div>
                     <Link to="/">Top</Link>へ
-                    <hr />
-                    <RouteHandler {...this.props} />
                 </div>
             );
         }
     });
 
-    return AppLayout;
+    return ErrorControllerView;
 });

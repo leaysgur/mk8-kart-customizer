@@ -13,7 +13,13 @@ define([
 
     let { Link } = Router;
 
-    const CustomLayout = React.createClass({
+    const CustomControllerView = React.createClass({
+        getInitialState() {
+            return {
+                driverList: DriverModel.selectAll()
+            };
+        },
+
         render() {
             return (
                 <div>
@@ -21,7 +27,7 @@ define([
 
                     <KartStatusView />
                     <hr />
-                    <DriverListView driverList={DriverModel.selectAll()} />
+                    <DriverListView driverList={this.state.driverList} />
                     <Link to="/custom/">決定</Link>
 
                     <hr />
@@ -31,5 +37,5 @@ define([
         }
     });
 
-    return CustomLayout;
+    return CustomControllerView;
 });
