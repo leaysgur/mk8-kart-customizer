@@ -16,7 +16,7 @@ define([
     const CustomControllerView = React.createClass({
         getInitialState() {
             return {
-                selectedDriver: null,
+                selectedDriver: DriverModel.selectById(10101),
                 driverList: DriverModel.selectAll()
             };
         },
