@@ -13,13 +13,14 @@ require([
     class Main {
         constructor() {
             DriverModel.init(DriverData);
+
+            React.initializeTouchEvents(true);
         }
 
         start() {
             Router.run(AppRoutes, (Handler, state) => {
-                let params = state.params;
                 React.render(
-                    <Handler params={params} />,
+                    <Handler params={state.params} />,
                     document.body
                 );
             });
