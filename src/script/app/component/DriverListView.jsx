@@ -1,20 +1,24 @@
 define([
-    'react'
+    'react',
+    'app/component/DriverListItemView'
 ], (
-    React
+    React,
+    DriverListItemView
 ) => {
 
     const DriverListView = React.createClass({
         propTypes: {
-            driverList: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
+            driverList: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+            onSelectDriver: React.PropTypes.func.isRequired
+        },
+        _onSelectDriver(driver) {
+            this.props.onSelectDriver(driver);
         },
         render() {
             return (
                 <ul>
                     {this.props.driverList.map((driver) => {return (
-                    <li key={driver.id}>
-                        {driver.name}
-                    </li>
+                    <DriverListItemView driver={driver} onSelectDriver={this._onSelectDriver} key={driver.id} />
                     );})}
                 </ul>
             );
