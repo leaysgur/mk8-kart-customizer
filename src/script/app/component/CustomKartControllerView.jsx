@@ -19,11 +19,10 @@ define([
 
     let { Link } = Router;
 
-    const CustomControllerView = React.createClass({
+    const CustomKartControllerView = React.createClass({
         getInitialState() {
             return {
                 selectedDriver: DriverModel.selectById(this.props.params.id),
-                // TODO: const
                 selectedBody:   BodyModel.selectById(20101),
                 selectedTire:   TireModel.selectById(30001),
                 selectedGlider: GliderModel.selectById(40001),
@@ -33,7 +32,6 @@ define([
             };
         },
         _onSelectItem(type, item) {
-            // TODO: const
             switch (type) {
             case 'body':
                 this.setState({ selectedBody: item });
@@ -72,5 +70,5 @@ define([
         }
     });
 
-    return CustomControllerView;
+    return CustomKartControllerView;
 });
