@@ -11,9 +11,9 @@ define([
         render() {
             return (
                 <div>
-                    <Link to="/">Top</Link>へ
-                    <hr />
+                    <header>MarioKart8 Kart Customizer</header>
                     <RouteHandler {...this.props} />
+                    <footer>@leader22</footer>
                 </div>
             );
         }

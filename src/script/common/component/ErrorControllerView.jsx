@@ -10,10 +10,14 @@ define([
     const ErrorControllerView = React.createClass({
         render() {
             return (
-                <div>
-                    <div>エラー！</div>
-                    <Link to="/">Top</Link>へ
-                </div>
+                <section>
+                    <h1>エラー</h1>
+                    <p>
+                        URLが間違っているか、非対応の環境で閲覧したか、何はともあれエラーが発生したようです
+                    </p>
+
+                    <Link to="/">トップへ</Link>
+                </section>
             );
         }
     });

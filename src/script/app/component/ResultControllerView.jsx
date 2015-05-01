@@ -34,7 +34,7 @@ define([
         },
         render() {
             return (
-                <div>
+                <section>
                     <h1>カスタマイズ結果</h1>
 
                     <KartStatusView
@@ -44,9 +44,8 @@ define([
                         selectedGlider={this.state.selectedGlider}
                     />
 
-                    <hr />
                     <Link to={`/custom/${this.state.selectedDriver.id}`}>選びなおす</Link>
-                </div>
+                </section>
             );
         }
     });

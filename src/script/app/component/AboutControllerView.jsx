@@ -10,12 +10,12 @@ define([
     const AboutControllerView = React.createClass({
         render() {
             return (
-                <div>
+                <section>
                     <h1>このサービスについて</h1>
                     <p>ほげほげ</p>
-                    <hr />
+
                     <Link to="/">トップへ</Link>
-                </div>
+                </section>
             );
         }
     });

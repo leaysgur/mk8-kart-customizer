@@ -65,9 +65,7 @@ define([
                     <hr />
                     <KartPartsListView type="glider" itemList={this.state.gliderList} onSelectItem={this._onSelectItem} />
 
-
                     <Link to={`/result/${resultStr}`}>カスタマイズ結果へ</Link>
-                    <hr />
                     <Link to="/custom">選びなおす</Link>
                 </div>
             );

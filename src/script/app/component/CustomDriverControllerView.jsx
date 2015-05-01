@@ -39,7 +39,7 @@ define([
 
         render() {
             return (
-                <div>
+                <section>
                     <h1>ドライバー選択</h1>
 
                     <KartStatusView
@@ -50,11 +50,11 @@ define([
                     />
 
                     <DriverListView driverList={this.state.driverList} onSelectDriver={this._onSelectDriver} />
+
                     <Link to={'/custom/' + this.state.selectedDriver.id}>決定</Link>
 
-                    <hr />
                     <Link to="/">トップへ</Link>
-                </div>
+                </section>
             );
         }
     });

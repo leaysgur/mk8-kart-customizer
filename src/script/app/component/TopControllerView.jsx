@@ -10,12 +10,11 @@ define([
     const TopControllerView = React.createClass({
         render() {
             return (
-                <div>
-                    <h1>トップページ</h1>
-                    <hr />
+                <section>
+                    <h1>MarioKart8 Kart Customizer Img!</h1>
                     <Link to="custom">はじめる</Link>
                     <Link to="about">このサービスについて</Link>
-                </div>
+                </section>
             );
         }
     });
