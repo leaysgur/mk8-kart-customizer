@@ -1,10 +1,14 @@
 define([
     'react', 'react-router',
-    'app/model/DriverModel'
+    'app/model/DriverModel',
+    'app/component/KartStatusView',
+    'app/component/DriverListView'
 ], (
     React,
     Router,
-    DriverModel
+    DriverModel,
+    KartStatusView,
+    DriverListView
 ) => {
 
     let { Link } = Router;
@@ -15,13 +19,10 @@ define([
                 <div>
                     <h1>ドライバー選択</h1>
 
-                    <ul>
-                        {DriverModel.selectAll().map((driver) => {return (
-                        <li key={driver.id}>
-                            <Link to={"/custom/"+ driver.id}>{driver.name}</Link>
-                        </li>
-                        );})}
-                    </ul>
+                    <KartStatusView />
+                    <hr />
+                    <DriverListView driverList={DriverModel.selectAll()} />
+                    <Link to="/custom/">決定</Link>
 
                     <hr />
                     <Link to="/">トップへ</Link>
