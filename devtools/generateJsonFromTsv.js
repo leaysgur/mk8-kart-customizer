@@ -6,17 +6,17 @@ var tmpl = `{
     "id": "%s",
     "name": "%s",
     "speed": {
-        "ground":       "%s",
-        "water":        "%s",
-        "air":          "%s",
+        "ground": "%s",
+        "water": "%s",
+        "air": "%s",
         "antiGravity": "%s"
     },
     "acceleration": "%s",
     "weight": "%s",
     "handling": {
-        "ground":       "%s",
-        "water":        "%s",
-        "air":          "%s",
+        "ground": "%s",
+        "water": "%s",
+        "air": "%s",
         "antiGravity": "%s"
     },
     "traction": "%s",
