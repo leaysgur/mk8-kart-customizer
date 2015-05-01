@@ -12,6 +12,7 @@ define([
             return (
                 <div>
                     <h1>このサービスについて</h1>
+                    <p>ほげほげ</p>
                     <hr />
                     <Link to="/">トップへ</Link>
                 </div>

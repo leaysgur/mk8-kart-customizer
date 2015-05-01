@@ -1,5 +1,6 @@
 define([
     'react', 'react-router',
+    'common/Const',
     'app/model/DriverModel',
     'app/model/BodyModel',
     'app/model/TireModel',
@@ -9,6 +10,7 @@ define([
 ], (
     React,
     Router,
+    Const,
     DriverModel,
     BodyModel,
     TireModel,
@@ -22,7 +24,7 @@ define([
     const CustomDriverControllerView = React.createClass({
         getInitialState() {
             return {
-                selectedDriver: DriverModel.selectById(10101),
+                selectedDriver: DriverModel.selectById(Const.DEFAULT_CUSTOMISE.DRIVER),
                 selectedBody:   BodyModel.getSelectedSkelton(),
                 selectedTire:   TireModel.getSelectedSkelton(),
                 selectedGlider: GliderModel.getSelectedSkelton(),

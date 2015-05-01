@@ -1,5 +1,6 @@
 define([
     'react', 'react-router',
+    'common/Const',
     'app/model/DriverModel',
     'app/model/BodyModel',
     'app/model/TireModel',
@@ -9,6 +10,7 @@ define([
 ], (
     React,
     Router,
+    Const,
     DriverModel,
     BodyModel,
     TireModel,
@@ -23,9 +25,9 @@ define([
         getInitialState() {
             return {
                 selectedDriver: DriverModel.selectById(this.props.params.id),
-                selectedBody:   BodyModel.selectById(20101),
-                selectedTire:   TireModel.selectById(30001),
-                selectedGlider: GliderModel.selectById(40001),
+                selectedBody:   BodyModel.selectById(Const.DEFAULT_CUSTOMISE.BODY),
+                selectedTire:   TireModel.selectById(Const.DEFAULT_CUSTOMISE.TIRE),
+                selectedGlider: GliderModel.selectById(Const.DEFAULT_CUSTOMISE.GLIDER),
                 bodyList:       BodyModel.selectAll(),
                 tireList:       TireModel.selectAll(),
                 gliderList:     GliderModel.selectAll()
