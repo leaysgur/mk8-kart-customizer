@@ -25,9 +25,9 @@ define([
         getInitialState() {
             return {
                 selectedDriver: DriverModel.selectById(this.props.params.id),
-                selectedBody:   BodyModel.selectById(Const.DEFAULT_CUSTOMISE.BODY),
-                selectedTire:   TireModel.selectById(Const.DEFAULT_CUSTOMISE.TIRE),
-                selectedGlider: GliderModel.selectById(Const.DEFAULT_CUSTOMISE.GLIDER),
+                selectedBody:   BodyModel.selectById(Const.DEFAULT_CUSTOMIZE.BODY),
+                selectedTire:   TireModel.selectById(Const.DEFAULT_CUSTOMIZE.TIRE),
+                selectedGlider: GliderModel.selectById(Const.DEFAULT_CUSTOMIZE.GLIDER),
                 bodyList:       BodyModel.selectAll(),
                 tireList:       TireModel.selectAll(),
                 gliderList:     GliderModel.selectAll()

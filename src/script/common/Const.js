@@ -2,7 +2,7 @@ define([
 ], (
 ) => {
 
-    const DEFAULT_CUSTOMISE = {
+    const DEFAULT_CUSTOMIZE = {
         DRIVER: 10601,
         BODY:   20114,
         TIRE:   30018,
@@ -33,7 +33,7 @@ define([
     };
 
     return {
-        DEFAULT_CUSTOMISE,
+        DEFAULT_CUSTOMIZE,
         SELECTED_SKELTON
     };
 });

@@ -24,7 +24,7 @@ define([
     const CustomDriverControllerView = React.createClass({
         getInitialState() {
             return {
-                selectedDriver: DriverModel.selectById(Const.DEFAULT_CUSTOMISE.DRIVER),
+                selectedDriver: DriverModel.selectById(Const.DEFAULT_CUSTOMIZE.DRIVER),
                 selectedBody:   BodyModel.getSelectedSkelton(),
                 selectedTire:   TireModel.getSelectedSkelton(),
                 selectedGlider: GliderModel.getSelectedSkelton(),
