@@ -62,11 +62,11 @@ define([
             return (
                 <div>
                     <ul>
-                        <li>はやさ: {speed.ground}</li>
-                        <li>はやさ(地上): {speed.ground}</li>
-                        <li>はやさ(水中): {speed.water}</li>
-                        <li>はやさ(空中): {speed.air}</li>
-                        <li>はやさ(反重力): {speed.antiGravity}</li>
+                        <li>スピード: {speed.ground}</li>
+                        <li>スピード(地上): {speed.ground}</li>
+                        <li>スピード(水中): {speed.water}</li>
+                        <li>スピード(空中): {speed.air}</li>
+                        <li>スピード(反重力): {speed.antiGravity}</li>
                         <li>かそく: {acceleration}</li>
                         <li>おもさ: {weight}</li>
                         <li>まがりやすさ: {handling.ground}</li>

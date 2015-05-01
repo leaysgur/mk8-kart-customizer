@@ -307,7 +307,7 @@ return [{
     "miniTurbo": "2.5"
 },{
     "id": "10302",
-    "name": "むらびと",
+    "name": "むらびと(女)",
     "speed": {
         "ground": "3.25",
         "water": "3.75",
@@ -402,7 +402,7 @@ return [{
     "miniTurbo": "2.25"
 },{
     "id": "10502",
-    "name": "むらびと",
+    "name": "むらびと(男)",
     "speed": {
         "ground": "3.75",
         "water": "4.25",
