@@ -30,7 +30,7 @@ define([
             </Route>
 
             <Route name="result" handler={ResultControllerView}>
-                <Route path=":id" />
+                <Route path=":customizeId" />
             </Route>
 
             <NotFoundRoute handler={ErrorControllerView} />

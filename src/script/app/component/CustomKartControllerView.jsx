@@ -47,6 +47,7 @@ define([
             }
         },
         render() {
+            let resultStr = btoa(`${this.state.selectedDriver.id}_${this.state.selectedBody.id}_${this.state.selectedTire.id}_${this.state.selectedGlider.id}`);
             return (
                 <div>
                     <h1>カートパーツ選択</h1>
@@ -65,6 +66,7 @@ define([
                     <KartPartsListView type="glider" itemList={this.state.gliderList} onSelectItem={this._onSelectItem} />
 
 
+                    <Link to={`/result/${resultStr}`}>カスタマイズ結果へ</Link>
                     <hr />
                     <Link to="/custom">選びなおす</Link>
                 </div>

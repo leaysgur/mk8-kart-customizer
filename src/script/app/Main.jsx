@@ -36,6 +36,8 @@ require([
                     document.body
                 );
             });
+
+            // window.onerror = function() { location.hash = '/error'; };
         }
     }
 
