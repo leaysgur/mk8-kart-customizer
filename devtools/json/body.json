@@ -682,4 +682,23 @@
     },
     "traction": "0",
     "miniTurbo": "0"
+},{
+    "id": "20304",
+    "name": "バウザートライク",
+    "speed": {
+        "ground": "0",
+        "water": "0.5",
+        "air": "0.25",
+        "antiGravity": "-0.25"
+    },
+    "acceleration": "-0.25",
+    "weight": "0.25",
+    "handling": {
+        "ground": "-0.25",
+        "water": "0.75",
+        "air": "0.75",
+        "antiGravity": "-0.5"
+    },
+    "traction": "0.25",
+    "miniTurbo": "-0.5"
 }]

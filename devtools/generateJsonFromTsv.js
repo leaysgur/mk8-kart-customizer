@@ -32,9 +32,10 @@ var inputStream   = fs.createReadStream(`${__dirname}/tsv/${target}.tsv`),
 
 inputReadLine
 .on('line', (line) => {
+    console.log(line);
     var args = line.split('\t');
     outputStr.push(util.format(tmpl, ...args));
 })
 .on('close', () => {
-    fs.writeFile(`${__dirname}/json/${target}.json`, '[' + outputStr + ']', () => {});
+    fs.writeFile(`${__dirname}/json/${target}.json`, '[' + outputStr + ']', () => { console.log(`${target}.json has generated!`); });
 });
