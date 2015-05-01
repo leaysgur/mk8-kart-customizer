@@ -16,6 +16,7 @@ define([
     const CustomControllerView = React.createClass({
         getInitialState() {
             return {
+                // TODO: ベタ書きやめる
                 selectedDriver: DriverModel.selectById(10101),
                 driverList: DriverModel.selectAll()
             };
@@ -34,7 +35,7 @@ define([
                     <KartStatusView selectedDriver={this.state.selectedDriver} />
                     <hr />
                     <DriverListView driverList={this.state.driverList} onSelectDriver={this._onSelectDriver} />
-                    <Link to="/custom/">決定</Link>
+                    <Link to={'/custom/' + this.state.selectedDriver.id}>決定</Link>
 
                     <hr />
                     <Link to="/">トップへ</Link>
