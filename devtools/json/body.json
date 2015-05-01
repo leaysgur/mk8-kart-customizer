@@ -5,7 +5,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -13,10 +13,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20102",
     "name": "スケルトン",
@@ -24,7 +24,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -32,10 +32,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20103",
     "name": "G フォース",
@@ -43,7 +43,7 @@
         "ground":       "0.5",
         "water":        "0.25",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -51,10 +51,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "traction": "-1",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20104",
     "name": "スティールダイバー",
@@ -62,7 +62,7 @@
         "ground":       "0",
         "water":        "0.5",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "-0.5",
     "weight": "0.5",
@@ -70,10 +70,10 @@
         "ground":       "-0.5",
         "water":        "0.75",
         "air":          "-0.25",
-        "anti-gravity": "-0.75"
+        "antiGravity": "-0.75"
     },
     "traction": "0.5",
-    "mini-turbo": "-0.75"
+    "miniTurbo": "-0.75"
 },{
     "id": "20105",
     "name": "ネコクラシカル",
@@ -81,7 +81,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -89,10 +89,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20106",
     "name": "ターボ・ワン",
@@ -100,7 +100,7 @@
         "ground":       "0.5",
         "water":        "0.25",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -108,10 +108,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "traction": "-1",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20107",
     "name": "トライマッシュ",
@@ -119,7 +119,7 @@
         "ground":       "0",
         "water":        "0.5",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "-0.5",
     "weight": "0.5",
@@ -127,10 +127,10 @@
         "ground":       "-0.5",
         "water":        "0.75",
         "air":          "-0.25",
-        "anti-gravity": "-0.75"
+        "antiGravity": "-0.75"
     },
     "traction": "0.5",
-    "mini-turbo": "-0.75"
+    "miniTurbo": "-0.75"
 },{
     "id": "20108",
     "name": "ビートデイモン",
@@ -138,7 +138,7 @@
         "ground":       "0",
         "water":        "0.5",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "-0.5",
     "weight": "0.5",
@@ -146,10 +146,10 @@
         "ground":       "-0.5",
         "water":        "0.75",
         "air":          "-0.25",
-        "anti-gravity": "-0.75"
+        "antiGravity": "-0.75"
     },
     "traction": "0.5",
-    "mini-turbo": "-0.75"
+    "miniTurbo": "-0.75"
 },{
     "id": "20109",
     "name": "プリンセスコーチ",
@@ -157,7 +157,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -165,10 +165,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20110",
     "name": "パタテンテン",
@@ -176,7 +176,7 @@
         "ground":       "-0.75",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "-1"
+        "antiGravity": "-1"
     },
     "acceleration": "1.25",
     "weight": "-0.5",
@@ -184,10 +184,10 @@
         "ground":       "0.5",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "-0.25",
-    "mini-turbo": "1"
+    "miniTurbo": "1"
 },{
     "id": "20111",
     "name": "クッパシップ",
@@ -195,7 +195,7 @@
         "ground":       "-0.75",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "-1"
+        "antiGravity": "-1"
     },
     "acceleration": "1.25",
     "weight": "-0.5",
@@ -203,10 +203,10 @@
         "ground":       "0.5",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "-0.25",
-    "mini-turbo": "1"
+    "miniTurbo": "1"
 },{
     "id": "20112",
     "name": "スニーカート",
@@ -214,7 +214,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -222,10 +222,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20113",
     "name": "スーパースター",
@@ -233,7 +233,7 @@
         "ground":       "0.5",
         "water":        "0.25",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -241,10 +241,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "traction": "-1",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20114",
     "name": "ゴールドカート",
@@ -252,7 +252,7 @@
         "ground":       "0.5",
         "water":        "0.25",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -260,10 +260,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "traction": "-1",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20115",
     "name": "GLA",
@@ -271,7 +271,7 @@
         "ground":       "0",
         "water":        "0.5",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "-0.5",
     "weight": "0.5",
@@ -279,10 +279,10 @@
         "ground":       "-0.5",
         "water":        "0.75",
         "air":          "-0.25",
-        "anti-gravity": "-0.75"
+        "antiGravity": "-0.75"
     },
     "traction": "0.5",
-    "mini-turbo": "-0.75"
+    "miniTurbo": "-0.75"
 },{
     "id": "20116",
     "name": "W 25 シルバーアロー",
@@ -290,7 +290,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -298,10 +298,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20117",
     "name": "300 SL ロードスター",
@@ -309,7 +309,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -317,10 +317,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20118",
     "name": "ブルーファルコン",
@@ -328,7 +328,7 @@
         "ground":       "0.25",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0.5"
+        "antiGravity": "0.5"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -336,10 +336,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "-0.5",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20119",
     "name": "タヌキバギー",
@@ -347,7 +347,7 @@
         "ground":       "0",
         "water":        "0.5",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -355,10 +355,10 @@
         "ground":       "-0.25",
         "water":        "0.75",
         "air":          "0",
-        "anti-gravity": "-0.5"
+        "antiGravity": "-0.5"
     },
     "traction": "0.25",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20120",
     "name": "B ダッシュ",
@@ -366,7 +366,7 @@
         "ground":       "0.5",
         "water":        "0.25",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -374,10 +374,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "traction": "-1",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20121",
     "name": "わくわくビートル",
@@ -385,7 +385,7 @@
         "ground":       "0.25",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -393,10 +393,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "-0.5",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20122",
     "name": "P ウィング",
@@ -404,7 +404,7 @@
         "ground":       "0.5",
         "water":        "0.25",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "acceleration": "-0.25",
     "weight": "0.25",
@@ -412,10 +412,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "traction": "-1",
-    "mini-turbo": "-0.5"
+    "miniTurbo": "-0.5"
 },{
     "id": "20201",
     "name": "スタンダードバイク",
@@ -423,7 +423,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -431,10 +431,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20202",
     "name": "スーパーコメット",
@@ -442,7 +442,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.75",
     "weight": "-0.25",
@@ -450,10 +450,10 @@
         "ground":       "0.75",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0.5"
+        "antiGravity": "0.5"
     },
     "traction": "-1.25",
-    "mini-turbo": "0.5"
+    "miniTurbo": "0.5"
 },{
     "id": "20203",
     "name": "マッハ GP",
@@ -461,7 +461,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.75",
     "weight": "-0.25",
@@ -469,10 +469,10 @@
         "ground":       "0.75",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0.5"
+        "antiGravity": "0.5"
     },
     "traction": "-1.25",
-    "mini-turbo": "0.5"
+    "miniTurbo": "0.5"
 },{
     "id": "20204",
     "name": "マキシマム",
@@ -480,7 +480,7 @@
         "ground":       "",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -488,10 +488,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20205",
     "name": "バーニングボール",
@@ -499,7 +499,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -507,10 +507,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20206",
     "name": "モト・ドーザー",
@@ -518,7 +518,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -526,10 +526,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20207",
     "name": "そらまめ",
@@ -537,7 +537,7 @@
         "ground":       "-0.75",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "-1"
+        "antiGravity": "-1"
     },
     "acceleration": "1.25",
     "weight": "-0.5",
@@ -545,10 +545,10 @@
         "ground":       "0.5",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "-0.25",
-    "mini-turbo": "1"
+    "miniTurbo": "1"
 },{
     "id": "20208",
     "name": "ジェットライダー",
@@ -556,7 +556,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.75",
     "weight": "-0.25",
@@ -564,10 +564,10 @@
         "ground":       "0.75",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0.5"
+        "antiGravity": "0.5"
     },
     "traction": "-1.25",
-    "mini-turbo": "0.5"
+    "miniTurbo": "0.5"
 },{
     "id": "20209",
     "name": "ヨッシーバイク",
@@ -575,7 +575,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.75",
     "weight": "-0.25",
@@ -583,10 +583,10 @@
         "ground":       "0.75",
         "water":        "0.75",
         "air":          "0.75",
-        "anti-gravity": "0.5"
+        "antiGravity": "0.5"
     },
     "traction": "-1.25",
-    "mini-turbo": "0.5"
+    "miniTurbo": "0.5"
 },{
     "id": "20210",
     "name": "マスターバイク",
@@ -594,7 +594,7 @@
         "ground":       "0.25",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0",
     "weight": "0",
@@ -602,10 +602,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.75",
-        "anti-gravity": "0.5"
+        "antiGravity": "0.5"
     },
     "traction": "-0.75",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "20211",
     "name": "きせかえスクーター",
@@ -613,7 +613,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -621,10 +621,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20301",
     "name": "スタンダード ATV",
@@ -632,7 +632,7 @@
         "ground":       "0",
         "water":        "0.5",
         "air":          "0",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "-0.5",
     "weight": "0.5",
@@ -640,10 +640,10 @@
         "ground":       "-0.5",
         "water":        "0.75",
         "air":          "-0.25",
-        "anti-gravity": "-0.75"
+        "antiGravity": "-0.75"
     },
     "traction": "0.5",
-    "mini-turbo": "-0.75"
+    "miniTurbo": "-0.75"
 },{
     "id": "20302",
     "name": "ハナチャンバギー",
@@ -651,7 +651,7 @@
         "ground":       "0",
         "water":        "0.25",
         "air":          "0.25",
-        "anti-gravity": "-0.25"
+        "antiGravity": "-0.25"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -659,10 +659,10 @@
         "ground":       "0.5",
         "water":        "0.5",
         "air":          "0.5",
-        "anti-gravity": "0.25"
+        "antiGravity": "0.25"
     },
     "traction": "-0.5",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "20303",
     "name": "くまライド",
@@ -670,7 +670,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -678,8 +678,8 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 }]

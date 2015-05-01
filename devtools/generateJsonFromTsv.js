@@ -9,7 +9,7 @@ var tmpl = `{
         "ground":       "%s",
         "water":        "%s",
         "air":          "%s",
-        "anti-gravity": "%s"
+        "antiGravity": "%s"
     },
     "acceleration": "%s",
     "weight": "%s",
@@ -17,10 +17,10 @@ var tmpl = `{
         "ground":       "%s",
         "water":        "%s",
         "air":          "%s",
-        "anti-gravity": "%s"
+        "antiGravity": "%s"
     },
     "traction": "%s",
-    "mini-turbo": "%s"
+    "miniTurbo": "%s"
 }`;
 var outputStr = [];
 

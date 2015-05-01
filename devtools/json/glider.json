@@ -5,7 +5,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -13,10 +13,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "40002",
     "name": "もくもくバルーン",
@@ -24,7 +24,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -32,10 +32,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40003",
     "name": "ワリオカイト",
@@ -43,7 +43,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -51,10 +51,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "40004",
     "name": "ズングリカイト",
@@ -62,7 +62,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -70,10 +70,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "40005",
     "name": "ピーチパラソル",
@@ -81,7 +81,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -89,10 +89,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40006",
     "name": "パラシュート",
@@ -100,7 +100,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -108,10 +108,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40007",
     "name": "パラフォイル",
@@ -119,7 +119,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -127,10 +127,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40008",
     "name": "フラワーカイト",
@@ -138,7 +138,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -146,10 +146,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40009",
     "name": "クッパだこ",
@@ -157,7 +157,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -165,10 +165,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40010",
     "name": "セイルプレーン",
@@ -176,7 +176,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -184,10 +184,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "40011",
     "name": "パラフォイル MKTV",
@@ -195,7 +195,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -203,10 +203,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 },{
     "id": "40012",
     "name": "ゴールドカイト",
@@ -214,7 +214,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0",
     "weight": "0",
@@ -222,10 +222,10 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0"
+    "miniTurbo": "0"
 },{
     "id": "40013",
     "name": "ハイラルカイト",
@@ -233,7 +233,7 @@
         "ground":       "0",
         "water":        "0",
         "air":          "-0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "acceleration": "0.25",
     "weight": "-0.25",
@@ -241,8 +241,8 @@
         "ground":       "0",
         "water":        "0",
         "air":          "0.25",
-        "anti-gravity": "0"
+        "antiGravity": "0"
     },
     "traction": "0",
-    "mini-turbo": "0.25"
+    "miniTurbo": "0.25"
 }]
