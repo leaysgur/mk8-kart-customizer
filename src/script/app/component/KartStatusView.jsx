@@ -7,21 +7,57 @@ define([
     const KartStatusView = React.createClass({
         PropTypes: {
             selectedDriver: React.PropTypes.object.isRequired,
-            selectedBody: React.PropTypes.object.isRequired,
-            selectedTire: React.PropTypes.object.isRequired,
+            selectedBody:   React.PropTypes.object.isRequired,
+            selectedTire:   React.PropTypes.object.isRequired,
             selectedGlider: React.PropTypes.object.isRequired
         },
+        _getSumUpPropByKeyAndType(key, type) {
+            let numArr;
+            if (type) {
+                numArr = [
+                    this.props.selectedDriver[key][type],
+                    this.props.selectedBody[key][type],
+                    this.props.selectedTire[key][type],
+                    this.props.selectedGlider[key][type]
+                ];
+            } else {
+                numArr = [
+                    this.props.selectedDriver[key],
+                    this.props.selectedBody[key],
+                    this.props.selectedTire[key],
+                    this.props.selectedGlider[key]
+                ];
+            }
+
+            return numArr.reduce((a, b) => { return parseFloat(a) + parseFloat(b); });
+        },
         render() {
-            let {
-                id,
-                name,
-                speed,
-                acceleration,
-                weight,
-                handling,
-                traction,
-                miniTurbo
-            } = this.props.selectedDriver;
+            let driverId     = this.props.selectedDriver.id,
+                driverName   = this.props.selectedDriver.name,
+                bodyId       = this.props.selectedBody.id,
+                bodyName     = this.props.selectedBody.name,
+                tireId       = this.props.selectedTire.id,
+                tireName     = this.props.selectedTire.name,
+                gliderId     = this.props.selectedGlider.id,
+                gliderName   = this.props.selectedGlider.name,
+                speed        = {
+                    summary:     this._getSumUpPropByKeyAndType('speed', 'ground'),
+                    ground:      this._getSumUpPropByKeyAndType('speed', 'ground'),
+                    water:       this._getSumUpPropByKeyAndType('speed', 'water'),
+                    air:         this._getSumUpPropByKeyAndType('speed', 'air'),
+                    antiGravity: this._getSumUpPropByKeyAndType('speed', 'antiGravity')
+                },
+                acceleration = this._getSumUpPropByKeyAndType('acceleration', null)|0,
+                weight       = this._getSumUpPropByKeyAndType('weight', null)|0,
+                handling     = {
+                    summary:     this._getSumUpPropByKeyAndType('handling', 'ground'),
+                    ground:      this._getSumUpPropByKeyAndType('handling', 'ground'),
+                    water:       this._getSumUpPropByKeyAndType('handling', 'water'),
+                    air:         this._getSumUpPropByKeyAndType('handling', 'air'),
+                    antiGravity: this._getSumUpPropByKeyAndType('handling', 'antiGravity')
+                },
+                traction     = this._getSumUpPropByKeyAndType('traction', null),
+                miniTurbo    = this._getSumUpPropByKeyAndType('miniTurbo', null);
 
             return (
                 <div>
@@ -42,10 +78,10 @@ define([
                         <li>ミニターボ: {miniTurbo}</li>
                     </ul>
                     <ul>
-                        <li>{id}: {name}</li>
-                        <li>選択したボディ</li>
-                        <li>選択したタイヤ</li>
-                        <li>選択したグライダー</li>
+                        <li>{driverId}: {driverName}</li>
+                        <li>{bodyId}: {bodyName}</li>
+                        <li>{tireId}: {tireName}</li>
+                        <li>{gliderId}: {gliderName}</li>
                     </ul>
                 </div>
             );

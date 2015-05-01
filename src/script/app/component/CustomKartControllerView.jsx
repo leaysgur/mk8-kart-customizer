@@ -23,9 +23,10 @@ define([
         getInitialState() {
             return {
                 selectedDriver: DriverModel.selectById(this.props.params.id),
+                // TODO: const
                 selectedBody:   BodyModel.selectById(20101),
-                selectedTire:   TireModel.selectById(30101),
-                selectedGlider: GliderModel.selectById(40101),
+                selectedTire:   TireModel.selectById(30001),
+                selectedGlider: GliderModel.selectById(40001),
                 bodyList:       BodyModel.selectAll(),
                 tireList:       TireModel.selectAll(),
                 gliderList:     GliderModel.selectAll()
@@ -57,9 +58,9 @@ define([
                         selectedGlider={this.state.selectedGlider}
                     />
 
-                    <KartPartsListView type="body" itemList={this.state.bodyList} onSelectItem={this._onSelectItem} />
+                    <KartPartsListView type="body"   itemList={this.state.bodyList}   onSelectItem={this._onSelectItem} />
                     <hr />
-                    <KartPartsListView type="tire" itemList={this.state.tireList} onSelectItem={this._onSelectItem} />
+                    <KartPartsListView type="tire"   itemList={this.state.tireList}   onSelectItem={this._onSelectItem} />
                     <hr />
                     <KartPartsListView type="glider" itemList={this.state.gliderList} onSelectItem={this._onSelectItem} />
 
