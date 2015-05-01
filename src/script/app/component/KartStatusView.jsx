@@ -6,7 +6,10 @@ define([
 
     const KartStatusView = React.createClass({
         PropTypes: {
-            selectedDriver: React.PropTypes.object.isRequired
+            selectedDriver: React.PropTypes.object.isRequired,
+            selectedBody: React.PropTypes.object.isRequired,
+            selectedTire: React.PropTypes.object.isRequired,
+            selectedGlider: React.PropTypes.object.isRequired
         },
         render() {
             let {
