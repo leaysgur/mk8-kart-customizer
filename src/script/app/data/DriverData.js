@@ -723,5 +723,24 @@ return [{
     },
     "traction": "3.25",
     "miniTurbo": "1.75"
+},{
+    "id": "10905",
+    "name": "Mii(重量)",
+    "speed": {
+        "ground": "4.75",
+        "water": "5.25",
+        "air": "4.75",
+        "antiGravity": "5"
+    },
+    "acceleration": "2",
+    "weight": "4.75",
+    "handling": {
+        "ground": "2.25",
+        "water": "2.25",
+        "air": "2",
+        "antiGravity": "2.5"
+    },
+    "traction": "3.25",
+    "miniTurbo": "1.75"
 }];
 });

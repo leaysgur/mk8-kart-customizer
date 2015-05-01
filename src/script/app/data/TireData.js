@@ -381,5 +381,24 @@ return [{
     },
     "traction": "-0.5",
     "miniTurbo": "0.25"
+},{
+    "id": "30021",
+    "name": "リーフタイヤ",
+    "speed": {
+        "ground": "-0.5",
+        "water": "0",
+        "air": "0.5",
+        "antiGravity": "-0.5"
+    },
+    "acceleration": "1",
+    "weight": "-0.5",
+    "handling": {
+        "ground": "0.25",
+        "water": "0.25",
+        "air": "0.25",
+        "antiGravity": "0.25"
+    },
+    "traction": "-0.25",
+    "miniTurbo": "1.5"
 }];
 });

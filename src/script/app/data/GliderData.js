@@ -248,5 +248,24 @@ return [{
     },
     "traction": "0",
     "miniTurbo": "0.25"
+},{
+    "id": "40014",
+    "name": "かみひこうき",
+    "speed": {
+        "ground": "0",
+        "water": "0",
+        "air": "0",
+        "antiGravity": "0"
+    },
+    "acceleration": "0",
+    "weight": "0",
+    "handling": {
+        "ground": "0",
+        "water": "0",
+        "air": "0",
+        "antiGravity": "0"
+    },
+    "traction": "0",
+    "miniTurbo": "0"
 }];
 });
