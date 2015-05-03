@@ -1,25 +1,24 @@
 define([
-    'react', 'react-router',
+    'react',
     'common/Const',
     'app/model/DriverModel',
     'app/model/BodyModel',
     'app/model/TireModel',
     'app/model/GliderModel',
+    'app/component/BtnView',
     'app/component/KartStatusView',
     'app/component/KartPartsListView'
 ], (
     React,
-    Router,
     Const,
     DriverModel,
     BodyModel,
     TireModel,
     GliderModel,
+    BtnView,
     KartStatusView,
     KartPartsListView
 ) => {
-
-    let { Link } = Router;
 
     const ResultControllerView = React.createClass({
         getInitialState() {
@@ -34,8 +33,8 @@ define([
         },
         render() {
             return (
-                <section>
-                    <h1>カスタマイズ結果</h1>
+                <section className="lContentWrap cContentWrap">
+                    <h1 className="cHeading mLv1">カスタマイズ結果</h1>
 
                     <KartStatusView
                         selectedDriver={this.state.selectedDriver}
@@ -44,7 +43,8 @@ define([
                         selectedGlider={this.state.selectedGlider}
                     />
 
-                    <Link to={`/custom/${this.state.selectedDriver.id}`}>選びなおす</Link>
+                    <BtnView to={`/custom/${this.state.selectedDriver.id}`} label="選びなおす" />
+                    <BtnView to="/" label="トップへ" />
                 </section>
             );
         }
