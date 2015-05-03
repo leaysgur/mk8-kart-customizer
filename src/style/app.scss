@@ -1,13 +1,13 @@
+// 0. 言うまでもなく
 @import "compass";
 
+// 1. 土台作り
 @import
     "common/var",
     "common/reset",
     "common/default";
 
-@import
-    "app/app";
-
+// 2. 各種パーツ
 @import
     "app/component/loader",
     "app/component/content_wrap",
@@ -17,3 +17,8 @@
     "app/component/header",
     "app/component/footer",
     "app/component/main_img";
+
+// 3. それを組み合わせる
+@import
+    "app/app";
+

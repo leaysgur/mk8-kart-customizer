@@ -1,25 +1,24 @@
 define([
-    'react', 'react-router',
+    'react',
     'common/Const',
     'app/model/DriverModel',
     'app/model/BodyModel',
     'app/model/TireModel',
     'app/model/GliderModel',
+    'app/component/BtnView',
     'app/component/KartStatusView',
     'app/component/DriverListView'
 ], (
     React,
-    Router,
     Const,
     DriverModel,
     BodyModel,
     TireModel,
     GliderModel,
+    BtnView,
     KartStatusView,
     DriverListView
 ) => {
-
-    let { Link } = Router;
 
     const CustomDriverControllerView = React.createClass({
         getInitialState() {
@@ -39,8 +38,8 @@ define([
 
         render() {
             return (
-                <section className="lContentWrap">
-                    <h1>ドライバー選択</h1>
+                <section className="lContentWrap cContentWrap">
+                    <h1 className="cHeading mLv1">ドライバー選択</h1>
 
                     <KartStatusView
                         selectedDriver={this.state.selectedDriver}
@@ -51,9 +50,8 @@ define([
 
                     <DriverListView driverList={this.state.driverList} onSelectDriver={this._onSelectDriver} />
 
-                    <Link to={'/custom/' + this.state.selectedDriver.id}>決定</Link>
-
-                    <Link to="/">トップへ</Link>
+                    <BtnView to={'/custom/' + this.state.selectedDriver.id} label="パーツ選択へ" />
+                    <BtnView to="/" label="トップへ" />
                 </section>
             );
         }
