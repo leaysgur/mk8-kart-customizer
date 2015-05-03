@@ -1,0 +1,18 @@
+.cColumn {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.cColumnItem {
+    float: left;
+
+    &.mCount3 {
+        width: 33%;
+    }
+    &.mCount4 {
+        width: 24.75%;
+    }
+}

@@ -16,7 +16,7 @@ define([
         },
         render() {
             return (
-                <ul>
+                <ul className="cColumn">
                     {this.props.driverList.map((driver) => {return (
                     <DriverListItemView driver={driver} onSelectDriver={this._onSelectDriver} key={driver.id} />
                     );})}

@@ -1,0 +1,13 @@
+.cDriverItem {
+    text-align: center;
+    height: 112px;
+
+    .img {
+        width: 64px;
+        height: 64px;
+    }
+    .name {
+        font-size: $fs-s;
+        line-height: $lh-m;
+    }
+}

@@ -14,8 +14,11 @@ define([
         },
         render() {
             return (
-                <li onClick={this._onClickDriver}>
-                    {this.props.driver.name}
+                <li className="cColumnItem mCount3" onClick={this._onClickDriver}>
+                    <div className="cDriverItem">
+                        <img className="img" src={`dist/image/driver/${this.props.driver.id}.png`} alt={this.props.driver.name} />
+                        <div className="name">{this.props.driver.name}</div>
+                    </div>
                 </li>
             );
         }
