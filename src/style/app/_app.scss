@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: $header-zIndex;
 }
 
 .lFooter {
@@ -19,6 +20,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: $footer-zIndex;
 }
 
 .lTopBtn {
