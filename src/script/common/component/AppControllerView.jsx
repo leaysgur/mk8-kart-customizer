@@ -11,8 +11,12 @@ define([
         render() {
             return (
                 <div className="lAppWrap">
-                    <header className="cHeader lHeader">MarioKart8 Kart Customizer</header>
+                    <header className="cHeader lHeader">
+                        MarioKart8 Kart Customizer
+                    </header>
+
                     <RouteHandler {...this.props} />
+
                     <footer className="cFooter lFooter">
                        Created by <a href="https://twitter.com/leader22" target="_blank">@leader22</a>
                     </footer>
