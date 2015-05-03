@@ -20,7 +20,7 @@ define([
             return (
                 <ul>
                     {this.props.itemList.map((item) => {return (
-                    <KartPartsListItemView item={item} onSelectItem={this._onSelectItem} key={item.id} />
+                    <KartPartsListItemView type={this.props.type} item={item} onSelectItem={this._onSelectItem} key={item.id} />
                     );})}
                 </ul>
             );

@@ -7,6 +7,8 @@ define([
     const KartPartsListItemView = React.createClass({
         propTypes: {
             item: React.PropTypes.object.isRequired,
+            // TODO: Const
+            type: React.PropTypes.oneOf(['body', 'tire', 'glider']),
             onSelectItem: React.PropTypes.func.isRequired
         },
         _onClickItem() {
@@ -15,7 +17,7 @@ define([
         render() {
             return (
                 <li onClick={this._onClickItem}>
-                    {this.props.item.name}
+                    <img className="img" src={`dist/image/${this.props.type}/${this.props.item.id}.png`} alt={this.props.item.name} />
                 </li>
             );
         }
