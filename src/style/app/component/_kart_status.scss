@@ -1,0 +1,11 @@
+.cKartStatus {
+    background-color: $theme-color-4;
+    padding: 8px;
+
+    .linkToggleSummary {
+        display: block;
+        text-align: right;
+        font-size: $fs-s;
+        text-decoration: underline;
+    }
+}

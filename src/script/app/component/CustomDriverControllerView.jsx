@@ -48,6 +48,8 @@ define([
                         selectedGlider={this.state.selectedGlider}
                     />
 
+                    <hr className="cSpacer mSizeS" />
+
                     <DriverListView driverList={this.state.driverList} onSelectDriver={this._onSelectDriver} />
 
                     <BtnView to={'/custom/' + this.state.selectedDriver.id} label="パーツ選択へ" />

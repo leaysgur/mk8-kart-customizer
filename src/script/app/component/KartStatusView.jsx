@@ -75,7 +75,7 @@ define([
             let detailClassName  = (this.state.showSummary) ? 'isHidden' : '';
 
             return (
-                <div>
+                <div className="cKartStatus">
                     <ul className="cColumn">
                         <li className="cColumnItem mCount2">
                             <StatusGaugeView label="スピード"         val={speed.ground}      maxVal={6} className={summaryClassName} />
@@ -96,7 +96,9 @@ define([
                             <StatusGaugeView label="ミニターボ"           val={miniTurbo}            maxVal={6} />
                         </li>
                     </ul>
-                    <a onClick={this._toggleSummary}>{this.state.showSummary ? '詳細' : '簡易' }表示</a>
+
+                    <a className="linkToggleSummary" onClick={this._toggleSummary}>{this.state.showSummary ? '詳細' : '簡易' }表示</a>
+
                     <ul className="cColumn">
                         <li className="cColumnItem mCount4">
                             {driverId}: {driverName}

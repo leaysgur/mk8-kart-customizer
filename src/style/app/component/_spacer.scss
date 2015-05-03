@@ -1,4 +1,8 @@
 .cSpacer {
     border: none;
     height: 40px;
+
+    &.mSizeS {
+        height: 16px;
+    }
 }
