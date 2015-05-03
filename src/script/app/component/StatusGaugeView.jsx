@@ -29,8 +29,8 @@ define([
                     <div className="label">{this.props.label}</div>
                     <div className="gaugeWrap" data-val={this.props.val}>
                         <div className="gauge" style={gaugeStyle}></div>
-                        {maxValArr.map(() => {return (
-                        <span className="delimiter" style={outerStyle}></span>
+                        {maxValArr.map((i) => {return (
+                        <span key={i} className="delimiter" style={outerStyle}></span>
                         );})}
                     </div>
                 </div>
@@ -43,7 +43,7 @@ define([
     function __getEmptyArr(len) {
         let i = 0, l = len;
         let retArr = [];
-        for (; i < l; i++) { retArr[retArr.length] = 1; }
+        for (; i < l; i++) { retArr[retArr.length] = i; }
         return retArr;
     }
 });
