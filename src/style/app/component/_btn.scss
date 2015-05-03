@@ -1,0 +1,28 @@
+.cBtn {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid $theme-color-2;
+    width: 200px;
+
+    &:hover {
+        background-color: $theme-color-2;
+    }
+
+    .label {
+        display: table-cell;
+        vertical-align: middle;
+        line-height: $lh-m;
+    }
+
+    &.mPrimary {
+        width: 240px;
+        height: 48px;
+        padding: 8px 16px;
+        font-size: $fs-xl;
+        font-weight: bold;
+    }
+}
