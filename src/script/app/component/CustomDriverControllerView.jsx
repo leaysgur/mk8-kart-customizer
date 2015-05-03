@@ -39,7 +39,7 @@ define([
 
         render() {
             return (
-                <section className="l-content-wrap">
+                <section className="lContentWrap">
                     <h1>ドライバー選択</h1>
 
                     <KartStatusView

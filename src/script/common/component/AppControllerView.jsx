@@ -10,10 +10,12 @@ define([
     const AppControllerView = React.createClass({
         render() {
             return (
-                <div className="l-app-wrap">
-                    <header className="l-header">MarioKart8 Kart Customizer</header>
+                <div className="lAppWrap">
+                    <header className="cHeader lHeader">MarioKart8 Kart Customizer</header>
                     <RouteHandler {...this.props} />
-                    <footer className="l-footer">@leader22</footer>
+                    <footer className="cFooter lFooter">
+                       Created by <a href="https://twitter.com/leader22" target="_blank">@leader22</a>
+                    </footer>
                 </div>
             );
         }

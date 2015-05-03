@@ -1,8 +1,22 @@
-.l-app-wrap {
+.lAppWrap {
     height: 100%;
 }
 
-.l-content-wrap {
+.lContentWrap {
     padding-top: $header-height;
     padding-bottom: $footer-height;
+}
+
+.lHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.lFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

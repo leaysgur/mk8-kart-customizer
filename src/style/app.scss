@@ -6,6 +6,9 @@
     "common/default";
 
 @import
-    "app/app",
-    "app/header",
-    "app/footer";
+    "app/app";
+
+@import
+    "app/component/header",
+    "app/component/footer",
+    "app/component/main_img";
