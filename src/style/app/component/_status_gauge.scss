@@ -2,18 +2,36 @@
     position: relative;
 
     .label {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 4px;
-        margin: auto;
         font-size: $fs-s;
     }
 
-    .outer {
+    .gaugeWrap {
+        position: relative;
+        margin: 0 2px 4px;
+        @include display-flex();
+    }
+
+    .delimiter {
+        @extend %gauge-shape;
+        background-color: #000;
+
+        & + .delimiter {
+            border-left: 1px solid $theme-color-3;
+        }
     }
 
     .gauge {
-
+        @extend %gauge-shape;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba($theme-color-3, .8);
     }
+}
+
+%gauge-shape {
+    display: inline-block;
+    height: 8px;
+    @include transform(skewX(-16deg));
 }
