@@ -81,10 +81,11 @@ gulp.task('compile:style', function(){
         .src(PATH.STYLE.SRC)
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(compass({
-           // config_file: 'config.rb',
-           comments: false,
-           css: PATH.STYLE.DIST_DIR,
-           sass: PATH.STYLE.SRC_DIR
+            // config_file: 'config.rb',
+            comments: false,
+            force: true,
+            css: PATH.STYLE.DIST_DIR,
+            sass: PATH.STYLE.SRC_DIR
        }));
 });
 
