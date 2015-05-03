@@ -28,7 +28,7 @@ define([
                 selectedBody:   BodyModel.getSelectedSkelton(),
                 selectedTire:   TireModel.getSelectedSkelton(),
                 selectedGlider: GliderModel.getSelectedSkelton(),
-                driverList: DriverModel.selectAll()
+                driverList:     DriverModel.selectAll()
             };
         },
         _onSelectDriver(driver) {
@@ -39,7 +39,7 @@ define([
 
         render() {
             return (
-                <section>
+                <section className="l-content-wrap">
                     <h1>ドライバー選択</h1>
 
                     <KartStatusView

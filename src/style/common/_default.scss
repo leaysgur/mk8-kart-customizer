@@ -2,6 +2,10 @@
     @include box-sizing(border-box);
 }
 
+html {
+    font-size: 16px;
+}
+
 html,
 body {
     height: 100%;

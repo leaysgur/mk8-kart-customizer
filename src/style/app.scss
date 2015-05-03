@@ -1,3 +1,11 @@
 @import "compass";
 
-@import "common/_default";
+@import
+    "common/var",
+    "common/reset",
+    "common/default";
+
+@import
+    "app/app",
+    "app/header",
+    "app/footer";

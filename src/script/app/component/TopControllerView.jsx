@@ -10,7 +10,7 @@ define([
     const TopControllerView = React.createClass({
         render() {
             return (
-                <section>
+                <section className="l-content-wrap">
                     <h1>MarioKart8 Kart Customizer Img!</h1>
                     <Link to="custom">はじめる</Link>
                     <Link to="about">このサービスについて</Link>
