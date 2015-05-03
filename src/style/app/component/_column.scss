@@ -9,6 +9,9 @@
 .cColumnItem {
     float: left;
 
+    &.mCount2 {
+        width: 49.5%;
+    }
     &.mCount3 {
         width: 33%;
     }

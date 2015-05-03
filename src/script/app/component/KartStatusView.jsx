@@ -1,7 +1,9 @@
 define([
-    'react'
+    'react',
+    'app/component/StatusGaugeView'
 ], (
-    React
+    React,
+    StatusGaugeView
 ) => {
 
     const KartStatusView = React.createClass({
@@ -31,6 +33,16 @@ define([
 
             return numArr.reduce((a, b) => { return parseFloat(a) + parseFloat(b); });
         },
+        getInitialState() {
+            return {
+                showSummary: true
+            };
+        },
+        _toggleSummary() {
+            this.setState({
+                showSummary: !this.state.showSummary
+            });
+        },
         render() {
             let driverId     = this.props.selectedDriver.id,
                 driverName   = this.props.selectedDriver.name,
@@ -59,29 +71,45 @@ define([
                 traction     = this._getSumUpPropByKeyAndType('traction', null),
                 miniTurbo    = this._getSumUpPropByKeyAndType('miniTurbo', null);
 
+            let summaryClassName = (this.state.showSummary) ? '' : 'isHidden';
+            let detailClassName  = (this.state.showSummary) ? 'isHidden' : '';
+
             return (
                 <div>
-                    <ul>
-                        <li>スピード: {speed.ground}</li>
-                        <li>スピード(地上): {speed.ground}</li>
-                        <li>スピード(水中): {speed.water}</li>
-                        <li>スピード(空中): {speed.air}</li>
-                        <li>スピード(反重力): {speed.antiGravity}</li>
-                        <li>かそく: {acceleration}</li>
-                        <li>おもさ: {weight}</li>
-                        <li>まがりやすさ: {handling.ground}</li>
-                        <li>まがりやすさ(地上): {handling.ground}</li>
-                        <li>まがりやすさ(水中): {handling.water}</li>
-                        <li>まがりやすさ(空中): {handling.air}</li>
-                        <li>まがりやすさ(反重力): {handling.antiGravity}</li>
-                        <li>すべりにくさ: {traction}</li>
-                        <li>ミニターボ: {miniTurbo}</li>
+                    <ul className="cColumn">
+                        <li className="cColumnItem mCount2">
+                            <StatusGaugeView label="スピード"         val={speed.ground}      maxVal={6} className={summaryClassName} />
+                            <StatusGaugeView label="スピード(地上)"   val={speed.ground}      maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="スピード(水中)"   val={speed.water}       maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="スピード(空中)"   val={speed.air}         maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="スピード(反重力)" val={speed.antiGravity} maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="かそく"           val={acceleration}      maxVal={6} />
+                            <StatusGaugeView label="おもさ"           val={weight}            maxVal={6} />
+                        </li>
+                        <li className="cColumnItem mCount2">
+                            <StatusGaugeView label="まがりやすさ"         val={handling.ground}      maxVal={6} className={summaryClassName} />
+                            <StatusGaugeView label="まがりやすさ(地上)"   val={handling.ground}      maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="まがりやすさ(水中)"   val={handling.water}       maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="まがりやすさ(空中)"   val={handling.air}         maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="まがりやすさ(反重力)" val={handling.antiGravity} maxVal={6} className={detailClassName} />
+                            <StatusGaugeView label="すべりにくさ"         val={traction}             maxVal={6} />
+                            <StatusGaugeView label="ミニターボ"           val={miniTurbo}            maxVal={6} />
+                        </li>
                     </ul>
-                    <ul>
-                        <li>{driverId}: {driverName}</li>
-                        <li>{bodyId}: {bodyName}</li>
-                        <li>{tireId}: {tireName}</li>
-                        <li>{gliderId}: {gliderName}</li>
+                    <a onClick={this._toggleSummary}>{this.state.showSummary ? '詳細' : '簡易' }表示</a>
+                    <ul className="cColumn">
+                        <li className="cColumnItem mCount4">
+                            {driverId}: {driverName}
+                        </li>
+                        <li className="cColumnItem mCount4">
+                            {bodyId}: {bodyName}
+                        </li>
+                        <li className="cColumnItem mCount4">
+                            {tireId}: {tireName}
+                        </li>
+                        <li className="cColumnItem mCount4">
+                            {gliderId}: {gliderName}
+                        </li>
                     </ul>
                 </div>
             );
