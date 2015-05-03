@@ -1,2 +1,11 @@
-body { margin: 0; }
-ul { list-style: none; }
+body {
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: $lh-l;
+}

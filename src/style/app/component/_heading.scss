@@ -1,0 +1,11 @@
+.cHeading {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    &.mLv1 {
+        font-size: $fs-xl;
+    }
+    &.mLv2 {
+        font-size: $fs-l;
+    }
+}

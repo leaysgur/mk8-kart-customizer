@@ -1,20 +1,23 @@
 define([
-    'react', 'react-router',
+    'react',
+    'app/component/BtnView'
 ], (
     React,
-    Router
+    BtnView
 ) => {
-
-    let { Link } = Router;
 
     const AboutControllerView = React.createClass({
         render() {
             return (
-                <section>
-                    <h1>このサービスについて</h1>
+                <section className="lContentWrap cContentWrap">
+                    <h1 className="cHeading mLv1">このサービスについて</h1>
+                    <p>ほげほげ</p>
+                    <h2 className="cHeading mLv2">あれこれ</h2>
                     <p>ほげほげ</p>
 
-                    <Link to="/">トップへ</Link>
+                    <hr className="cSpacer" />
+
+                    <BtnView to="/" label="トップへ" />
                 </section>
             );
         }
