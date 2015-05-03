@@ -15,6 +15,7 @@ var del     = require('del');
 var amdOptm = require('amd-optimize');
 var concat  = require('gulp-concat');
 var uglify  = require('gulp-uglify');
+var compass = require('gulp-compass');
 
 
 /**
@@ -30,7 +31,11 @@ var PATH = {
         DIST_DIR:   './dist/script',
         BUNDLE_DIR: './dist/bundle'
     },
-    STYLE: {}
+    STYLE: {
+        SRC:        ['./src/style/**/*.scss'],
+        SRC_DIR:    './src/style',
+        DIST_DIR:   './dist/style'
+    }
 };
 
 
@@ -71,12 +76,29 @@ gulp.task('bundle:script', function() {
         .pipe(gulp.dest(PATH.SCRIPT.BUNDLE_DIR));
 });
 
+gulp.task('compile:style', function(){
+    return gulp
+        .src(PATH.STYLE.SRC)
+        .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
+        .pipe(compass({
+           // config_file: 'config.rb',
+           comments: false,
+           css: PATH.STYLE.DIST_DIR,
+           sass: PATH.STYLE.SRC_DIR
+       }));
+});
+
+gulp.task('watch:style', ['compile:style'], function(){
+    return gulp
+        .watch(PATH.STYLE.SRC, ['compile:style']);
+});
+
 
 /**
  *
  * Aliases
  *
  */
-gulp.task('dev', ['watch:script']);
+gulp.task('dev', ['watch:script', 'watch:style']);
 gulp.task('build', ['init', 'bundle:script']);
 gulp.task('default', ['init']);
