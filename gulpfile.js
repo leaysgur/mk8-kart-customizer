@@ -82,10 +82,10 @@ gulp.task('compile:style', function(){
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(compass({
             comments: false,
-            style: 'compressed',
-            force: true,
-            css: PATH.STYLE.DIST_DIR,
-            sass: PATH.STYLE.SRC_DIR
+            style:    'compressed',
+            force:    true,
+            css:      PATH.STYLE.DIST_DIR,
+            sass:     PATH.STYLE.SRC_DIR
        }));
 });
 
@@ -101,5 +101,5 @@ gulp.task('watch:style', ['compile:style'], function(){
  *
  */
 gulp.task('dev', ['watch:script', 'watch:style']);
-gulp.task('build', ['init', 'bundle:script']);
+gulp.task('build', ['bundle:script']);
 gulp.task('default', ['init']);
