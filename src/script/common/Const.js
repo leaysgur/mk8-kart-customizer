@@ -3,10 +3,10 @@ define([
 ) => {
 
     const DEFAULT_CUSTOMIZE = {
-        DRIVER: 10601,
-        BODY:   20114,
-        TIRE:   30018,
-        GLIDER: 40012
+        DRIVER: 10101,
+        BODY:   20101,
+        TIRE:   30003,
+        GLIDER: 40002
     };
 
     const SELECTED_SKELTON = {

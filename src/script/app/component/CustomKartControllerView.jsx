@@ -60,9 +60,9 @@ define([
 
                     <hr className="cSpacer mSizeS" />
 
-                    <KartPartsListView type="body"   itemList={this.state.bodyList}   onSelectItem={this._onSelectItem} />
-                    <KartPartsListView type="tire"   itemList={this.state.tireList}   onSelectItem={this._onSelectItem} />
-                    <KartPartsListView type="glider" itemList={this.state.gliderList} onSelectItem={this._onSelectItem} />
+                    <KartPartsListView type="body"   itemList={this.state.bodyList}   onSelectItem={this._onSelectItem} selectedItem={this.state.selectedBody} />
+                    <KartPartsListView type="tire"   itemList={this.state.tireList}   onSelectItem={this._onSelectItem} selectedItem={this.state.selectedTire} />
+                    <KartPartsListView type="glider" itemList={this.state.gliderList} onSelectItem={this._onSelectItem} selectedItem={this.state.selectedGlider} />
 
                     <hr className="cSpacer mSizeS" />
 

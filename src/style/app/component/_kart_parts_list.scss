@@ -1,5 +1,5 @@
 .cKartPartsList {
-    padding: 8px 0 16px;
+    padding: 8px 0;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     text-align: center;
@@ -7,10 +7,20 @@
 }
 
 .cKartPartsListItem {
+    padding: 8px 0;
     @include flex(76px 1 0);
 
     .img {
         width: 72px;
         height: 46px;
+    }
+
+    &.isSelected {
+        background-color: $theme-color-2;
+
+        .img {
+            @include transition(all .25s cubic-bezier(0.68, -0.55, 0.27, 1.55));
+            @include transform(scale(1.1));
+        }
     }
 }
