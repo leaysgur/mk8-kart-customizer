@@ -32,13 +32,11 @@ define([
             };
         },
         _getShareUrl() {
-            let text     = encodeURIComponent(location.href);
-            let appUrl = `twitter://post?message=${text}`;
-            let webUrl = `https://twitter.com/intent/tweet?text=${text}`;
+            let text   = encodeURIComponent(Const.SHARE_URL.TEXT + location.href);
 
             return {
-                app: appUrl,
-                web: webUrl
+                app: Const.SHARE_URL.APP + text,
+                web: Const.SHARE_URL.WEB + text
             };
         },
         render() {

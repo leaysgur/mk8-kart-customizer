@@ -34,10 +34,17 @@ define([
 
     const GAUGE_MAX_VAL = 6;
 
+    const SHARE_URL = {
+        TEXT: 'おれのかんがえたさいそくのかすたまいず ',
+        APP:  'twitter://post?message=',
+        WEB:  'https://twitter.com/intent/tweet?text='
+    };
+
     return {
         DEFAULT_CUSTOMIZE,
         SELECTED_SKELTON,
-        GAUGE_MAX_VAL
+        GAUGE_MAX_VAL,
+        SHARE_URL
     };
 });
 

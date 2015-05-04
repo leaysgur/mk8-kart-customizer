@@ -20,7 +20,7 @@ define([
 
             if (this.props.custom) {
                 return (
-                    <a className={className} href={this.props.to}>
+                    <a className={className} href={this.props.to} target="_blank">
                         <p className="label">{this.props.label}</p>
                     </a>
                 );
