@@ -40,7 +40,8 @@ define([
                 showSummary: true
             };
         },
-        _toggleSummary() {
+        _toggleSummary(ev) {
+            ev.preventDefault();
             this.setState({
                 showSummary: !this.state.showSummary
             });
