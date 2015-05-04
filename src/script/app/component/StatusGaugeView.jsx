@@ -16,12 +16,13 @@ define([
             className += ' cStatusGauge';
 
             let maxValArr = __getEmptyArr(this.props.maxVal);
+            let baseWidth = (100/this.props.maxVal).toFixed(2);
 
             let gaugeStyle = {
-                width: `${((this.props.val/this.props.maxVal)*100).toFixed(2)}%`
+                width: `${baseWidth * this.props.val}%`
             };
             let delimiterStyle = {
-                width: `${(100/this.props.maxVal).toFixed(2)}%`
+                width: `${baseWidth}%`
             };
 
             return (
