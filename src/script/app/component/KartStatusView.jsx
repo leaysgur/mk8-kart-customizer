@@ -97,7 +97,7 @@ define([
                         </li>
                     </ul>
 
-                    <a className="linkToggleSummary" onClick={this._toggleSummary}>{this.state.showSummary ? '詳細' : '簡易' }表示</a>
+                    <a className="linkToggleSummary" onClick={this._toggleSummary}>{this.state.showSummary ? '詳細' : '簡易' }表示にする</a>
 
                     { (bodyId && tireId && gliderId) ?
                     <ul className="cColumn">
