@@ -32,9 +32,12 @@ define([
         miniTurbo: 0
     };
 
+    const GAUGE_MAX_VAL = 6;
+
     return {
         DEFAULT_CUSTOMIZE,
-        SELECTED_SKELTON
+        SELECTED_SKELTON,
+        GAUGE_MAX_VAL
     };
 });
 

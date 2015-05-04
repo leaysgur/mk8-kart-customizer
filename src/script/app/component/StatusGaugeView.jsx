@@ -20,7 +20,7 @@ define([
             let gaugeStyle = {
                 width: `${((this.props.val/this.props.maxVal)*100).toFixed(2)}%`
             };
-            let outerStyle = {
+            let delimiterStyle = {
                 width: `${(100/this.props.maxVal).toFixed(2)}%`
             };
 
@@ -30,7 +30,7 @@ define([
                     <div className="gaugeWrap" data-val={this.props.val}>
                         <div className="gauge" style={gaugeStyle}></div>
                         {maxValArr.map((i) => {return (
-                        <span key={i} className="delimiter" style={outerStyle}></span>
+                        <span key={i} className="delimiter" style={delimiterStyle}></span>
                         );})}
                     </div>
                 </div>

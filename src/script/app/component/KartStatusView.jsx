@@ -1,8 +1,10 @@
 define([
     'react',
+    'common/Const',
     'app/component/StatusGaugeView'
 ], (
     React,
+    Const,
     StatusGaugeView
 ) => {
 
@@ -43,6 +45,19 @@ define([
                 showSummary: !this.state.showSummary
             });
         },
+        shouldComponentUpdate(nextProps, nextState) {
+            let isSameDriver = nextProps.selectedDriver === this.props.selectedDriver;
+            let isSameBody   = nextProps.selectedBody   === this.props.selectedBody;
+            let isSameTire   = nextProps.selectedTire   === this.props.selectedTire;
+            let isSameGlider = nextProps.selectedGlider === this.props.selectedGlider;
+
+            let isDriverChanged = !isSameDriver;
+            let isPartsChanged  = !(isSameBody && isSameTire && isSameGlider) && (this.props.selectedBody.id !== 0);
+
+            let isToggleSummary = nextState.showSummary !== this.state.showSummary;
+
+            return isToggleSummary || (isDriverChanged || isPartsChanged);
+        },
         render() {
             let driverId     = this.props.selectedDriver.id,
                 driverName   = this.props.selectedDriver.name,
@@ -78,22 +93,22 @@ define([
                 <div className="cKartStatus">
                     <ul className="cColumn">
                         <li className="cColumnItem mCount2">
-                            <StatusGaugeView label="スピード"         val={speed.ground}      maxVal={6} className={summaryClassName} />
-                            <StatusGaugeView label="スピード(地上)"   val={speed.ground}      maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="スピード(水中)"   val={speed.water}       maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="スピード(空中)"   val={speed.air}         maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="スピード(反重力)" val={speed.antiGravity} maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="かそく"           val={acceleration}      maxVal={6} />
-                            <StatusGaugeView label="おもさ"           val={weight}            maxVal={6} />
+                            <StatusGaugeView label="スピード"         val={speed.ground}      maxVal={Const.GAUGE_MAX_VAL} className={summaryClassName} />
+                            <StatusGaugeView label="スピード(地上)"   val={speed.ground}      maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="スピード(水中)"   val={speed.water}       maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="スピード(空中)"   val={speed.air}         maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="スピード(反重力)" val={speed.antiGravity} maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="かそく"           val={acceleration}      maxVal={Const.GAUGE_MAX_VAL} />
+                            <StatusGaugeView label="おもさ"           val={weight}            maxVal={Const.GAUGE_MAX_VAL} />
                         </li>
                         <li className="cColumnItem mCount2">
-                            <StatusGaugeView label="まがりやすさ"         val={handling.ground}      maxVal={6} className={summaryClassName} />
-                            <StatusGaugeView label="まがりやすさ(地上)"   val={handling.ground}      maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="まがりやすさ(水中)"   val={handling.water}       maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="まがりやすさ(空中)"   val={handling.air}         maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="まがりやすさ(反重力)" val={handling.antiGravity} maxVal={6} className={detailClassName} />
-                            <StatusGaugeView label="すべりにくさ"         val={traction}             maxVal={6} />
-                            <StatusGaugeView label="ミニターボ"           val={miniTurbo}            maxVal={6} />
+                            <StatusGaugeView label="まがりやすさ"         val={handling.ground}      maxVal={Const.GAUGE_MAX_VAL} className={summaryClassName} />
+                            <StatusGaugeView label="まがりやすさ(地上)"   val={handling.ground}      maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="まがりやすさ(水中)"   val={handling.water}       maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="まがりやすさ(空中)"   val={handling.air}         maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="まがりやすさ(反重力)" val={handling.antiGravity} maxVal={Const.GAUGE_MAX_VAL} className={detailClassName} />
+                            <StatusGaugeView label="すべりにくさ"         val={traction}             maxVal={Const.GAUGE_MAX_VAL} />
+                            <StatusGaugeView label="ミニターボ"           val={miniTurbo}            maxVal={Const.GAUGE_MAX_VAL} />
                         </li>
                     </ul>
 
