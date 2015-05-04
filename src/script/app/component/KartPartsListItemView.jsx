@@ -16,7 +16,7 @@ define([
         },
         render() {
             return (
-                <li onClick={this._onClickItem}>
+                <li className="cKartPartsListItem" onClick={this._onClickItem}>
                     <img className="img" src={`dist/image/${this.props.type}/${this.props.item.id}.png`} alt={this.props.item.name} />
                 </li>
             );

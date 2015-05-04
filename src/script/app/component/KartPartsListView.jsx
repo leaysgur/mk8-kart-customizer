@@ -18,7 +18,7 @@ define([
         },
         render() {
             return (
-                <ul>
+                <ul className="cKartPartsList">
                     {this.props.itemList.map((item) => {return (
                     <KartPartsListItemView type={this.props.type} item={item} onSelectItem={this._onSelectItem} key={item.id} />
                     );})}

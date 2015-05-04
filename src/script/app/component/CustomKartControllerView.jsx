@@ -61,10 +61,10 @@ define([
                     <hr className="cSpacer mSizeS" />
 
                     <KartPartsListView type="body"   itemList={this.state.bodyList}   onSelectItem={this._onSelectItem} />
-                    <hr />
                     <KartPartsListView type="tire"   itemList={this.state.tireList}   onSelectItem={this._onSelectItem} />
-                    <hr />
                     <KartPartsListView type="glider" itemList={this.state.gliderList} onSelectItem={this._onSelectItem} />
+
+                    <hr className="cSpacer mSizeS" />
 
                     <BtnView to={`/result/${resultStr}`} label="カスタマイズ結果へ" />
                     <BtnView to="/custom" label="選びなおす" />

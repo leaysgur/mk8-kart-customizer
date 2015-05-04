@@ -1,0 +1,16 @@
+.cKartPartsList {
+    padding: 8px 0 16px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    @include display-flex();
+}
+
+.cKartPartsListItem {
+    @include flex(76px 1 0);
+
+    .img {
+        width: 72px;
+        height: 46px;
+    }
+}
