@@ -14,8 +14,6 @@ define([
                         <img className="img" src="dist/image/main.png" alt="MarioKart8 Kart Customizer" />
                     </h1>
 
-                    <hr className="cSpacer" />
-
                     <BtnView label="はじめる" to="custom" primary />
                     <BtnView label="このサービスについて" to="about" />
                 </section>
