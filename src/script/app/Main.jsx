@@ -26,7 +26,7 @@ require([
             TireModel.init(TireData);
             GliderModel.init(GliderData);
 
-            React.initializeTouchEvents(true);
+            // React.initializeTouchEvents(true);
         }
 
         start() {
@@ -37,7 +37,7 @@ require([
                 );
             });
 
-            // window.onerror = function() { location.hash = '/error'; };
+            window.onerror = function() { location.hash = '/error'; };
         }
     }
 
