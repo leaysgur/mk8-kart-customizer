@@ -32,10 +32,17 @@ define([
             };
         },
         _getShareUrl() {
+            let text     = encodeURIComponent(location.href);
+            let appUrl = `twitter://post?message=${text}`;
+            let webUrl = `https://twitter.com/intent/tweet?text=${text}`;
+
+            return {
+                app: appUrl,
+                web: webUrl
+            };
         },
         render() {
-            let text     = encodeURIComponent(location.href);
-            let shareUrl = `twitter://post?message=${text}`;
+            let { app: shareAppUrl, web: shareWebUrl } = this._getShareUrl();
 
             return (
                 <section className="lContentWrap cContentWrap">
@@ -48,7 +55,13 @@ define([
                         selectedGlider={this.state.selectedGlider}
                     />
 
-                    <BtnView to={shareUrl} label="Twitterにシェア" className="lResultBtn" primary custom />
+                    <hr className="cSpacer mSizeS" />
+
+                    <BtnView to={shareAppUrl} label="Twitterにシェア(App)" primary custom />
+                    <BtnView to={shareWebUrl} label="Twitterにシェア(Web)" primary custom />
+
+                    <hr className="cSpacer mSizeS" />
+
                     <BtnView to={`/custom/${this.state.selectedDriver.id}`} label="選びなおす" />
                     <BtnView to="/" label="トップへ" />
                 </section>
