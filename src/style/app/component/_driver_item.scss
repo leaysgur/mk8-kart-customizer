@@ -1,13 +1,26 @@
 .cDriverItem {
     text-align: center;
     height: 112px;
+    padding: 8px 0;
 
     .img {
-        width: 64px;
-        height: 64px;
+        width: 56px;
+        height: 56px;
     }
     .name {
         font-size: $fs-s;
         line-height: $lh-m;
+    }
+
+    &.isSelected {
+        background-color: $theme-color-2;
+
+        .img {
+            @include transition(all .25s cubic-bezier(0.68, -0.55, 0.27, 1.55));
+            @include transform(scale(1.1));
+        }
+        .name {
+            font-weight: bold;
+        }
     }
 }

@@ -50,7 +50,11 @@ define([
 
                     <hr className="cSpacer mSizeS" />
 
-                    <DriverListView driverList={this.state.driverList} onSelectDriver={this._onSelectDriver} />
+                    <DriverListView
+                        driverList={this.state.driverList}
+                        onSelectDriver={this._onSelectDriver}
+                        selectedDriver={this.state.selectedDriver}
+                    />
 
                     <BtnView to={'/custom/' + this.state.selectedDriver.id} label="パーツ選択へ" />
                     <BtnView to="/" label="トップへ" />
