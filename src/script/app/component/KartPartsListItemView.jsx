@@ -1,10 +1,13 @@
 define([
-    'react'
+    'react',
+    'common/mixin/LazyImgLoadMixin'
 ], (
-    React
+    React,
+    LazyImgLoadMixin
 ) => {
 
     const KartPartsListItemView = React.createClass({
+        mixins: [LazyImgLoadMixin],
         propTypes: {
             item: React.PropTypes.object.isRequired,
             // TODO: Const
@@ -20,7 +23,7 @@ define([
             if (this.props.isSelected) { partsListItemClassName += ' isSelected'; }
             return (
                 <li className={partsListItemClassName} onClick={this._onClickItem}>
-                    <img className="img" src={`dist/image/${this.props.type}/${this.props.item.id}.png`} alt={this.props.item.name} />
+                    <img className="img" src="dist/image/loader.svg" data-src={`dist/image/${this.props.type}/${this.props.item.id}.png`} alt={this.props.item.name} />
                 </li>
             );
         }

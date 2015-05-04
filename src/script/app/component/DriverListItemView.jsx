@@ -1,10 +1,13 @@
 define([
-    'react'
+    'react',
+    'common/mixin/LazyImgLoadMixin'
 ], (
-    React
+    React,
+    LazyImgLoadMixin
 ) => {
 
     const DriverListItemView = React.createClass({
+        mixins: [LazyImgLoadMixin],
         propTypes: {
             driver:         React.PropTypes.object.isRequired,
             onSelectDriver: React.PropTypes.func.isRequired,
@@ -19,7 +22,7 @@ define([
             return (
                 <li className="cColumnItem mCount5" onClick={this._onClickDriver}>
                     <div className={driverItemClassName}>
-                        <img className="img" src={`dist/image/driver/${this.props.driver.id}.png`} alt={this.props.driver.name} />
+                        <img className="img" src="dist/image/loader.svg" data-src={`dist/image/driver/${this.props.driver.id}.png`} alt={this.props.driver.name} />
                         <div className="name">{this.props.driver.name}</div>
                     </div>
                 </li>
