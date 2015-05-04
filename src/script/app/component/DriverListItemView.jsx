@@ -17,7 +17,7 @@ define([
             let driverItemClassName = 'cDriverItem';
             if (this.props.isSelected) { driverItemClassName += ' isSelected'; }
             return (
-                <li className="cColumnItem mCount3" onClick={this._onClickDriver}>
+                <li className="cColumnItem mCount5" onClick={this._onClickDriver}>
                     <div className={driverItemClassName}>
                         <img className="img" src={`dist/image/driver/${this.props.driver.id}.png`} alt={this.props.driver.name} />
                         <div className="name">{this.props.driver.name}</div>

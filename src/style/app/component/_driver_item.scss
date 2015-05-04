@@ -1,15 +1,15 @@
 .cDriverItem {
     text-align: center;
-    height: 112px;
+    height: 88px;
     padding: 8px 0;
 
     .img {
-        width: 56px;
-        height: 56px;
+        width: 48px;
+        height: 48px;
     }
     .name {
-        font-size: $fs-s;
-        line-height: $lh-m;
+        font-size: $fs-xs;
+        line-height: $lh-s;
     }
 
     &.isSelected {
@@ -17,7 +17,7 @@
 
         .img {
             @include transition(all .25s cubic-bezier(0.68, -0.55, 0.27, 1.55));
-            @include transform(scale(1.1));
+            @include transform(scale(1.2));
         }
         .name {
             font-weight: bold;
