@@ -1,0 +1,13 @@
+.cSelectedItem {
+    padding-top: 16px;
+    text-align: center;
+
+    .img {
+        width: auto;
+        height: 40px;
+    }
+    .name {
+        font-size: $fs-xs;
+        line-height: $lh-s;
+    }
+}

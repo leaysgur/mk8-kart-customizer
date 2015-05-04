@@ -99,20 +99,34 @@ define([
 
                     <a className="linkToggleSummary" onClick={this._toggleSummary}>{this.state.showSummary ? '詳細' : '簡易' }表示</a>
 
+                    { (bodyId && tireId && gliderId) ?
                     <ul className="cColumn">
                         <li className="cColumnItem mCount4">
-                            {driverId}: {driverName}
+                            <div className="cSelectedItem">
+                                <img className="img" src={`dist/image/driver/${driverId}.png`} alt={driverName} />
+                                <div className="name">{driverName}</div>
+                            </div>
                         </li>
                         <li className="cColumnItem mCount4">
-                            {bodyId}: {bodyName}
+                            <div className="cSelectedItem">
+                                <img className="img" src={`dist/image/body/${bodyId}.png`} alt={bodyName} />
+                                <div className="name">{bodyName}</div>
+                            </div>
                         </li>
                         <li className="cColumnItem mCount4">
-                            {tireId}: {tireName}
+                            <div className="cSelectedItem">
+                                <img className="img" src={`dist/image/tire/${tireId}.png`} alt={tireName} />
+                                <div className="name">{tireName}</div>
+                            </div>
                         </li>
                         <li className="cColumnItem mCount4">
-                            {gliderId}: {gliderName}
+                            <div className="cSelectedItem">
+                                <img className="img" src={`dist/image/glider/${gliderId}.png`} alt={gliderName} />
+                                <div className="name">{gliderName}</div>
+                            </div>
                         </li>
                     </ul>
+                    : '' }
                 </div>
             );
         }
