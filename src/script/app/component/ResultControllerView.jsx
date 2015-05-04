@@ -22,8 +22,8 @@ define([
 
     const ResultControllerView = React.createClass({
         getInitialState() {
-            let customizeId = atob(this.props.params.customizeId);
-            let [driverId, bodyId, tireId, gliderId] = customizeId.split('_');
+            let customizeIdStr = atob(this.props.params.customizeId);
+            let [driverId, bodyId, tireId, gliderId] = customizeIdStr.split('_');
             return {
                 selectedDriver: DriverModel.selectById(driverId),
                 selectedBody:   BodyModel.selectById(bodyId),
@@ -31,7 +31,12 @@ define([
                 selectedGlider: GliderModel.selectById(gliderId)
             };
         },
+        _getShareUrl() {
+        },
         render() {
+            let text     = encodeURIComponent(location.href);
+            let shareUrl = `twitter://post?message=${text}`;
+
             return (
                 <section className="lContentWrap cContentWrap">
                     <h1 className="cHeading mLv1">カスタマイズ結果</h1>
@@ -43,6 +48,7 @@ define([
                         selectedGlider={this.state.selectedGlider}
                     />
 
+                    <BtnView to={shareUrl} label="Twitterにシェア" className="lResultBtn" primary custom />
                     <BtnView to={`/custom/${this.state.selectedDriver.id}`} label="選びなおす" />
                     <BtnView to="/" label="トップへ" />
                 </section>
